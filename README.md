@@ -30,7 +30,24 @@ poligono-site/
 |   |-- brand/
 |   |   `-- poligono-sphere.svg
 |   |-- images/
-|   |   `-- .gitkeep
+|   |   `-- projects/
+|   |       |-- aami-park.jpg
+|   |       |-- adelaide-oval.jpg
+|   |       |-- barangaroo-concept.jpg
+|   |       |-- branz-yonban-cho.jpg
+|   |       |-- broderick-rd-industrial-facility.jpg
+|   |       |-- como-the-arch.jpg
+|   |       |-- custodian-project.jpg
+|   |       |-- healthcare-housing-development.jpg
+|   |       |-- heathrow-t5.jpg
+|   |       |-- lloyds-corner.jpg
+|   |       |-- melbourne-convention-centre.jpg
+|   |       |-- mlmc-cafeteria-staff-office.jpg
+|   |       |-- mlmc-redevelopment.jpg
+|   |       |-- obic-midosuji.jpg
+|   |       |-- shorts-place.jpg
+|   |       |-- syscon-vr.jpg
+|   |       `-- triangle-house.jpg
 |   |-- video/
 |   |   `-- .gitkeep
 |   `-- icons/
@@ -66,6 +83,14 @@ The `CNAME` file is intentionally empty for now. Add the final custom domain onl
 - The hero descriptor line is `VISUALISATION / DIGITAL TWINS / OPENUSD`.
 - Generated concept imagery is reference only and should not be used as a production logo or website asset.
 
+## Migrated Image Assets
+
+Project images migrated from the existing Wix site are stored locally in `assets/images/projects/` and referenced from `index.html` as repository assets. Wix-hosted image URLs were used only as source references during migration and should not be used directly in production HTML or CSS.
+
+The migrated project covers were optimised to JPG files with ImageMagick so the static site remains lightweight and still works by opening `index.html` directly.
+
+The requested `IMG_1893_edited.jpg` profile image was not exposed in the inspected Wix homepage or About page payloads, so no profile image was added to the current About section. If the source file becomes available, place it under `assets/images/profile/` and reference it locally.
+
 ## Temporary Font Testing
 
 The `<body>` element has a temporary font testing class. Switch typography directions by changing that single class:
@@ -79,7 +104,6 @@ Remove this testing system once the final font direction is selected.
 
 ## Future Improvements
 
-- Add real project imagery.
 - Add case study pages.
 - Add technical workflow pages if needed later.
 - Optimise image loading.
