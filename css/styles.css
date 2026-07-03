@@ -9,7 +9,12 @@
   --color-border-strong: rgba(34, 33, 29, 0.28);
   --color-accent: #6f7f78;
   --color-accent-soft: rgba(111, 127, 120, 0.16);
-  --font-base: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans-fallback: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono-fallback: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", monospace;
+  --font-display: var(--font-sans-fallback);
+  --font-body: var(--font-sans-fallback);
+  --font-ui: var(--font-sans-fallback);
+  --font-mono: var(--font-mono-fallback);
   --space-xs: 0.5rem;
   --space-sm: 0.875rem;
   --space-md: 1.25rem;
@@ -21,6 +26,27 @@
   --header-height: 4.75rem;
   --wordmark-tracking: 0.08em;
   --sphere-size: 1em;
+}
+
+body.theme-font-a-space-inter {
+  --font-display: "Space Grotesk", var(--font-sans-fallback);
+  --font-body: "Inter", var(--font-sans-fallback);
+  --font-ui: "Inter", var(--font-sans-fallback);
+  --font-mono: "Inter", var(--font-sans-fallback);
+}
+
+body.theme-font-b-sora-inter {
+  --font-display: "Sora", var(--font-sans-fallback);
+  --font-body: "Inter", var(--font-sans-fallback);
+  --font-ui: "Inter", var(--font-sans-fallback);
+  --font-mono: "Inter", var(--font-sans-fallback);
+}
+
+body.theme-font-c-plex {
+  --font-display: "IBM Plex Sans", var(--font-sans-fallback);
+  --font-body: "IBM Plex Sans", var(--font-sans-fallback);
+  --font-ui: "IBM Plex Sans", var(--font-sans-fallback);
+  --font-mono: "IBM Plex Mono", var(--font-mono-fallback);
 }
 
 *,
@@ -41,7 +67,7 @@ body {
     var(--color-bg);
   background-size: 80px 80px, 80px 80px, auto;
   color: var(--color-text);
-  font-family: var(--font-base);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.58;
   text-rendering: optimizeLegibility;
@@ -72,6 +98,7 @@ h1,
 h2,
 h3 {
   color: var(--color-text);
+  font-family: var(--font-display);
   font-weight: 500;
   line-height: 1.02;
   letter-spacing: 0;
@@ -113,6 +140,7 @@ h3 {
   border: 1px solid var(--color-border-strong);
   background: var(--color-text);
   color: var(--color-surface);
+  font-family: var(--font-ui);
   padding: 0.7rem 1rem;
   transition: transform 160ms ease;
 }
@@ -162,7 +190,8 @@ h3 {
   --sphere-size: 0.86em;
   gap: 0.045em;
   color: var(--color-text);
-  font-weight: 760;
+  font-family: var(--font-display);
+  font-weight: 700;
   letter-spacing: var(--wordmark-tracking);
   line-height: 0.86;
   text-transform: uppercase;
@@ -196,6 +225,7 @@ h3 {
 .nav-links {
   gap: clamp(0.9rem, 2vw, 1.8rem);
   color: var(--color-muted);
+  font-family: var(--font-ui);
   font-size: 0.86rem;
 }
 
@@ -224,8 +254,9 @@ h3 {
 .eyebrow,
 .application-index {
   color: var(--color-accent);
+  font-family: var(--font-mono);
   font-size: 0.74rem;
-  font-weight: 750;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -254,8 +285,9 @@ h3 {
 .brand-descriptor {
   margin-bottom: var(--space-xl);
   color: var(--color-text);
+  font-family: var(--font-mono);
   font-size: clamp(0.72rem, 1.45vw, 0.98rem);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.18em;
   line-height: 1.4;
 }
@@ -264,6 +296,7 @@ h3 {
   max-width: 45rem;
   margin-bottom: var(--space-md);
   color: var(--color-text);
+  font-family: var(--font-display);
   font-size: clamp(1.75rem, 4vw, 3.45rem);
   font-weight: 500;
   line-height: 1.05;
@@ -282,7 +315,8 @@ h3 {
   gap: 0.5rem;
   border-bottom: 1px solid var(--color-accent);
   color: var(--color-text);
-  font-weight: 650;
+  font-family: var(--font-ui);
+  font-weight: 600;
 }
 
 .text-link::after {
@@ -522,6 +556,7 @@ h3 {
 
 .technology-list span {
   color: var(--color-text);
+  font-family: var(--font-ui);
   font-weight: 700;
 }
 
@@ -569,6 +604,7 @@ h3 {
   width: fit-content;
   border-bottom: 1px solid var(--color-accent);
   color: var(--color-text);
+  font-family: var(--font-display);
   font-size: clamp(1.35rem, 4vw, 2.65rem);
   line-height: 1.15;
   transition: color 150ms ease, border-color 150ms ease;
@@ -589,6 +625,7 @@ h3 {
   border-top: 1px solid var(--color-border);
   padding: var(--space-lg) 0;
   color: var(--color-subtle);
+  font-family: var(--font-ui);
   font-size: 0.86rem;
 }
 

@@ -66,6 +66,16 @@ The `CNAME` file is intentionally empty for now. Add the final custom domain onl
 - The hero descriptor line is `VISUALISATION / DIGITAL TWINS / OPENUSD`.
 - Generated concept imagery is reference only and should not be used as a production logo or website asset.
 
+## Temporary Font Testing
+
+The `<body>` element has a temporary font testing class. Switch typography directions by changing that single class:
+
+- `theme-font-a-space-inter`: Space Grotesk for display, logo, hero, and headings; Inter for body and UI.
+- `theme-font-b-sora-inter`: Sora for display, logo, hero, and headings; Inter for body and UI.
+- `theme-font-c-plex`: IBM Plex Sans for display, headings, body, and UI; IBM Plex Mono for technical labels only.
+
+Remove this testing system once the final font direction is selected.
+
 ## Future Improvements
 
 - Add real project imagery.
