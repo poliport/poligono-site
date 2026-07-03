@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Poligono sphere mark">
+  <defs>
+    <radialGradient id="sphere-surface" cx="31%" cy="24%" r="74%">
+      <stop offset="0" stop-color="#6c6b64"/>
+      <stop offset="0.2" stop-color="#34342f"/>
+      <stop offset="0.55" stop-color="#151513"/>
+      <stop offset="1" stop-color="#050505"/>
+    </radialGradient>
+    <radialGradient id="sphere-highlight" cx="29%" cy="22%" r="33%">
+      <stop offset="0" stop-color="#f4f0e8" stop-opacity="0.5"/>
+      <stop offset="0.34" stop-color="#d9d4ca" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#d9d4ca" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sphere-rim" x1="22%" y1="12%" x2="78%" y2="88%">
+      <stop offset="0" stop-color="#8b8a82" stop-opacity="0.42"/>
+      <stop offset="0.42" stop-color="#20201d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="226" fill="url(#sphere-surface)"/>
+  <circle cx="256" cy="256" r="226" fill="url(#sphere-highlight)"/>
+  <path fill="#0d0d0c" fill-opacity="0.46" d="M116 328c49 83 145 123 237 91 52-18 91-55 113-101-33 96-138 157-244 133-87-20-147-86-164-166 16 17 35 31 58 43Z"/>
+  <circle cx="256" cy="256" r="226" fill="none" stroke="url(#sphere-rim)" stroke-width="18"/>
+</svg>

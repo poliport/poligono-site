@@ -27,6 +27,8 @@ poligono-site/
 |-- README.md
 |-- CNAME
 |-- assets/
+|   |-- brand/
+|   |   `-- poligono-sphere.svg
 |   |-- images/
 |   |   `-- .gitkeep
 |   |-- video/
@@ -56,6 +58,13 @@ https://poliport.github.io/poligono-site/
 ```
 
 The `CNAME` file is intentionally empty for now. Add the final custom domain only when the domain is ready to connect through VentraIP DNS.
+
+## Brand Notes
+
+- The primary brand mark is a live-text `POLIGON` wordmark with a reusable SVG sphere replacing the final `O`.
+- The sphere asset lives at `assets/brand/poligono-sphere.svg`.
+- The hero descriptor line is `VISUALISATION / DIGITAL TWINS / OPENUSD`.
+- Generated concept imagery is reference only and should not be used as a production logo or website asset.
 
 ## Future Improvements
 
