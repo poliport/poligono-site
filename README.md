@@ -1,8 +1,8 @@
 # Poligono Website
 
-Initial static website framework for Poligono, a premium 3D visualisation and architectural visualisation business.
+Static GitHub Pages site for Poligono, a visual technology and architectural visualisation studio working across architectural imagery, digital twins, OpenUSD workflows, real-time environments, and technical 3D pipeline development.
 
-The site is designed as a landing page and portfolio starter for GitHub Pages. It uses semantic HTML, responsive CSS, and minimal vanilla JavaScript only. There is no build system, package manager, framework, or external JavaScript dependency.
+The site uses semantic HTML, responsive CSS, and minimal vanilla JavaScript only. There is no build system, package manager, framework, or external JavaScript dependency.
 
 ## Tech Stack
 
@@ -22,21 +22,21 @@ You can preview the site in either of these ways:
 ## Folder Structure
 
 ```text
-poligono-website/
-├── index.html
-├── README.md
-├── CNAME
-├── assets/
-│   ├── images/
-│   │   └── .gitkeep
-│   ├── video/
-│   │   └── .gitkeep
-│   └── icons/
-│       └── .gitkeep
-├── css/
-│   └── styles.css
-└── js/
-    └── main.js
+poligono-site/
+|-- index.html
+|-- README.md
+|-- CNAME
+|-- assets/
+|   |-- images/
+|   |   `-- .gitkeep
+|   |-- video/
+|   |   `-- .gitkeep
+|   `-- icons/
+|       `-- .gitkeep
+|-- css/
+|   `-- styles.css
+`-- js/
+    `-- main.js
 ```
 
 ## GitHub Pages Deployment
@@ -49,14 +49,18 @@ Recommended settings:
 - Branch: `main`
 - Folder: `/root`
 
-For GitHub Free, the repository can be public to use GitHub Pages.
+The site is intended to work from:
 
-The `CNAME` file is intentionally empty for now. Add the final custom domain only when the domain is ready to connect through DNS.
+```text
+https://poliport.github.io/poligono-site/
+```
+
+The `CNAME` file is intentionally empty for now. Add the final custom domain only when the domain is ready to connect through VentraIP DNS.
 
 ## Future Improvements
 
 - Add real project imagery.
-- Add project case study pages.
-- Optimise images for responsive delivery and performance.
-- Configure custom domain DNS when the final domain is ready.
-- Add analytics only if required later.
+- Add case study pages.
+- Add technical workflow pages if needed later.
+- Optimise image loading.
+- Connect the custom domain through VentraIP when ready.
