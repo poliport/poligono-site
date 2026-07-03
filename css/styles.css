@@ -49,6 +49,13 @@ body.theme-font-c-plex {
   --font-mono: "IBM Plex Mono", var(--font-mono-fallback);
 }
 
+body.theme-font-d-cal-inter {
+  --font-display: "Cal Sans", var(--font-sans-fallback);
+  --font-body: "Inter", var(--font-sans-fallback);
+  --font-ui: "Inter", var(--font-sans-fallback);
+  --font-mono: "Inter", var(--font-sans-fallback);
+}
+
 *,
 *::before,
 *::after {

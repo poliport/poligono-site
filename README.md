@@ -73,6 +73,7 @@ The `<body>` element has a temporary font testing class. Switch typography direc
 - `theme-font-a-space-inter`: Space Grotesk for display, logo, hero, and headings; Inter for body and UI.
 - `theme-font-b-sora-inter`: Sora for display, logo, hero, and headings; Inter for body and UI.
 - `theme-font-c-plex`: IBM Plex Sans for display, headings, body, and UI; IBM Plex Mono for technical labels only.
+- `theme-font-d-cal-inter`: Cal Sans for display, logo, hero, and headings; Inter for body and UI.
 
 Remove this testing system once the final font direction is selected.
 
